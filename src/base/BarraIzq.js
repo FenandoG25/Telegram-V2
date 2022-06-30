@@ -24,7 +24,7 @@ const BarraIzq = () => {
     }, [])
 
     const addThread = () =>{
-        const threadName = prompt('Crear un nuevo chat')
+        const threadName = prompt('Crear un nuevo grupo')
         db.collection('mensajes').add({
             threadName: threadName,
         })
